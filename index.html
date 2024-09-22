@@ -52,6 +52,7 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Últimos lançamentos</h2>
         <div class="swiper">
+            <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="assests/ApacheKafka.svg" alt="livro"></div>
                 <div class="swiper-slide"><img src="assests/Liderança.svg" alt="livro"></div>
@@ -60,12 +61,10 @@
                 <div class="swiper-slide"><img src="assests/Portugol.svg" alt="livro"></div>
                 <div class="swiper-slide"><img src="assests/Acessibilidade.svg" alt="livro"></div>
             </div>
-            <div class="swiper-pagination"></div>
+            
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
 
@@ -74,6 +73,10 @@
         const swiper = new Swiper('.swiper', {
         spaceBetween: 10,
         slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
         });
     </script>
 </body>
