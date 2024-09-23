@@ -28,7 +28,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: auto;
 }
 
 .container__botao:checked~.lista-menu {
@@ -67,10 +67,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+
     .container__titulo,
     .container__titulo--negrito {
         font-family: var(--font-secundaria);
-        font-size: 30px;
+        font-size: 1.875em;
     }
 
     .container__titulo {
@@ -100,6 +101,19 @@
     }
 
     .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+    
+    .transparente {
         display: none;
     }
 }
