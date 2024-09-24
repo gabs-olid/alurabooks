@@ -66,20 +66,24 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .container__titulo,
-    .container__titulo--negrito {
+    .container__titulo-negrito {
         font-family: var(--font-secundaria);
         font-size: 1.875em;
     }
 
     .container__titulo {
-        font-weight: 400;
         display: block;
+        font-weight: 400;
     }
 
-    .container__titulo--negrito {
+    .container__titulo-negrito {
         font-weight: 700;
     }
 
@@ -116,5 +120,27 @@
     .transparente {
         display: none;
     }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
 }
 
