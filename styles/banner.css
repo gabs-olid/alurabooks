@@ -24,6 +24,7 @@
     width: 100%;
 }
 
+
 .banner__pesquisa::placeholder {
     font-family: var(--fonte-principal);
     font-size: 0.875em;
@@ -31,7 +32,7 @@
     text-align: center;
     color: var(--branco);
     background: url(../assests/Lupa.svg) no-repeat;
-    background-position: 1em;
+    background-position: 10%;
     padding-left: 0.9em;
 }
 
@@ -46,7 +47,7 @@
     }
 
     .banner__pesquisa::placeholder {
-        background-position: 7em;
+        background-position: 20%;
         font-size: 1em;
     }
 
@@ -58,7 +59,7 @@
     }
 
     .banner__pesquisa::placeholder {
-        background-position: 12em;
+        background-position: 25%;
     }
 
     .banner {
